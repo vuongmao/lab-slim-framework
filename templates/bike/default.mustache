@@ -1,0 +1,12 @@
+{{> bike/header}}
+<h1>Bikes</h1>
+<div class="bikes">
+{{#bikes}}
+  <div>
+    <span>🚲</span>
+    <h2><a href="/bike/detail/{{ id }}">{{ name }}</a></h2>
+    <p>{{ type }}</p>
+  </div>
+{{/bikes}}
+</div>
+{{> bike/footer}}
